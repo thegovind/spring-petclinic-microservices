@@ -1,8 +1,11 @@
 spring:
   application:
     name: visits-service
-  config:
-    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+  zipkin:
+    sender:
+      type: web
+#  config:
+#    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
 
 
 ---
